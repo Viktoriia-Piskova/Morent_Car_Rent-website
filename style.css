@@ -1,22 +1,21 @@
 /* @import './styles/reset.css'; */
-@import './styles/cardStyles.css';
+@import "./styles/cardStyles.css";
 
 ul {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 .container-fluid {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .main {
-    background-color: #F6F7F9;
+  background-color: #f6f7f9;
 }
 
 aside {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
-
 
 h1 {
   font-family: "Plus Jakarta Sans";
@@ -29,6 +28,15 @@ h1 {
   letter-spacing: -0.01em;
   color: #ffffff;
 }
+h2 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #90a3bf;
+}
 h4 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
@@ -38,29 +46,44 @@ h4 {
   color: #131313;
 }
 
+.view-all a {
+  font-family: "Plus Jakarta Sans";
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3563e9;
+  text-decoration: none;
+}
+
+.view-all a:hover {
+    text-decoration: underline;
+}
+
 footer li {
-    display: block;
-    list-style: none;
-    margin: 20px 0px;
+  display: block;
+  list-style: none;
+  margin: 20px 0px;
 }
 
 .footer-links {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 120%;
-    color: #90A3BF;
-    text-decoration: none;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: #90a3bf;
+  text-decoration: none;
 }
 
 .footer-copyright {
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 200%;
-letter-spacing: -0.01em;
-color: #131313;
-text-decoration: none;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+  color: #131313;
+  text-decoration: none;
 }
