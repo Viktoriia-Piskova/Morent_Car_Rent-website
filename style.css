@@ -1,0 +1,66 @@
+/* @import './styles/reset.css'; */
+@import './styles/cardStyles.css';
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+.container-fluid {
+    background-color: #fff;
+}
+
+.main {
+    background-color: #F6F7F9;
+}
+
+aside {
+    background-color: #ffffff;
+}
+
+
+h1 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+h4 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #131313;
+}
+
+footer li {
+    display: block;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.footer-links {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #90A3BF;
+    text-decoration: none;
+}
+
+.footer-copyright {
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 200%;
+letter-spacing: -0.01em;
+color: #131313;
+text-decoration: none;
+}

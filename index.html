@@ -28,9 +28,9 @@
                 <a class="navbar-brand" href="#"><img src="./img/Logo.svg" alt="Logo"></a>
                 <form class="d-flex">
                     <div class="input-group">
-                    <input class="form-control me-2" type="text" placeholder="Search">
-                    <button class="btn btn-light" type="submit"><img src="./img/search-zoom.svg" alt=""></button>
-                </div>
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-light" type="submit"><img src="./img/search-zoom.svg" alt=""></button>
+                    </div>
                 </form>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                     <span class="navbar-toggler-icon" id="navbar-burger"></span>
@@ -64,8 +64,9 @@
         </nav>
 
     </header>
-    <main class="container">
-        <aside>
+
+    <div class="container row">
+        <aside class="col-sm-3">
             <form action="#">
                 <fieldset>
                     <legend>Type</legend>
@@ -75,16 +76,129 @@
                 </fieldset>
                 <fieldset>
                     <legend>Capacity</legend>
-
+                    <input type="checkbox" id="two" value="2">
+                    <label for="two">2 Person <span id="twoCount">(10)</span></label>
                 </fieldset>
                 <fieldset>
                     <legend>Price</legend>
+                    <input type="range">
                 </fieldset>
             </form>
         </aside>
 
-    </main>
+        <main class="main container col-sm-9">
+
+            <section id="car-details">
+                <div id="car-info">
+                    <div id="car-photos">
+
+                    </div>
+                    <div id="car-description">
+
+                    </div>
+                </div>
+                <div id="car-reviews">
+
+                </div>
+            </section>
+
+            <section id="resent">
+                <div id="javaScript" class="card" style="width:317px">
+                    <div class="row justify-content-between">
+                        <h4 class="card-title col">Koenigsegg</h4>
+                        <button class="like-btn col">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="red"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                                    fill="#3D5278" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="type-car">Sport</p>
+                    <img class="card-img-top" src="./img/cars/mc01.png" alt="Card image">
+                    <div class="card-body">
+
+                        <div class="tech-section row">
+                            <div class="tech-info col no-wrap">
+                                <div class="tech-icon"><img src="./img/gas-station.svg" alt="gas"></div>
+                                <span class="tech-desription">80L</span>
+                            </div>
+                            <div class="tech-info col no-wrap">
+                                <div class="tech-icon"><img src="./img/manual.svg" alt="steering"></div>
+                                <span class="tech-desription">Manual</span>
+                            </div>
+                            <div class="tech-info col no-wrap">
+                                <div class="tech-icon"><img src="./img/capacity-people.svg" alt="capacity-people"></div>
+                                <span class="tech-desription">2 people</span>
+                            </div>
+                        </div>
+
+                        <div class="rent-info row">
+                            <div class="price-display col row column align-content-center">
+                                <p class="price col"><span class="current-price">$80.00/</span>day</p>
+                                <p class="price full-price col">$100.00</p>
+                            </div>
+                            <a href="#" class="btn btn-primary col rent-now-btn">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="recomendations">
+
+            </section>
+
+        </main>
+
+    </div>
     <footer>
+        <div>
+            <img src="./img/Logo.svg" alt="Logo">
+            <p>Our vision is to provide convenience and help increase your sales business.</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>About</h4>
+                <ul>
+                    <li><a class="footer-links" href="#">How it works</a></li>
+                    <li><a class="footer-links" href="#">Featured</a></li>
+                    <li><a class="footer-links" href="#">Partnership</a></li>
+                    <li><a class="footer-links" href="#">Bussiness Relation</a></li>
+                </ul>
+            </div>
+            <div class="row no-wrap col-sm-6">
+                <div class="col-sm-6">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a class="footer-links" href="#">Events</a></li>
+                        <li><a class="footer-links" href="#">Blog</a></li>
+                        <li><a class="footer-links" href="#">Podcast</a></li>
+                        <li><a class="footer-links" href="#">Invite a friend</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Socials</h4>
+                    <ul>
+                        <li><a class="footer-links" href="#">Discord</a></li>
+                        <li><a class="footer-links" href="#">Instagram</a></li>
+                        <li><a class="footer-links" href="#">Twitter</a></li>
+                        <li><a class="footer-links" href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-between">
+            <div class="col-sm-6">
+                <p class="footer-copyright">©2022 MORENT. All rights reserved</p>
+            </div>
+            <div class="col-sm-6">
+                <a href="#" class="footer-copyright">Privacy & Policy</a>
+                <a href="#" class="footer-copyright">Terms & Condition</a>
+            </div>
+        </div>
 
     </footer>
 

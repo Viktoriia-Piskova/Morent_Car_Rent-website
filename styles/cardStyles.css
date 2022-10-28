@@ -1,0 +1,87 @@
+.like-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  border: none;
+}
+
+.active * {
+  fill: red;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.card-body{
+    padding: 0px;
+    margin: 0px auto;
+}
+.card-img-top {
+  padding: 50px 0px;
+}
+
+.price {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #90a3bf;
+  margin: 0px;
+}
+
+.full-price {
+  text-decoration: line-through;
+}
+.current-price {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1a202c;
+}
+
+.rent-now-btn {
+  background: #3563e9;
+  border-radius: 4px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.type-car {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #90a3bf;
+}
+
+.tech-section {
+    padding: 0px;
+    margin: 20px 0px;
+}
+
+.tech-info {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tech-desription {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #90a3bf;
+}
+
+.tech-icon {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+}
