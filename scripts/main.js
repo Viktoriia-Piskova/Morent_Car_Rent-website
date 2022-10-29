@@ -1,5 +1,6 @@
 'use strict'
-import {carsData} from './carsData.js'
+import {carsData} from './carsData.js';
+import {displayCarCard} from './displayCarCard.js';
 
 
 
@@ -10,3 +11,4 @@ icon.onclick = function(){
 }
 
 console.log(carsData);
+displayCarCard(carsData);

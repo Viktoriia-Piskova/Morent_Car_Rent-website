@@ -11,8 +11,8 @@ export default class Car {
                 description, 
                 images) {
         this.id = id,
-        this.carName = carName,
-        this.typeCar = typeCar,
+        this.name = carName,
+        this.typer = typeCar,
         this.capacity = capacity,
         this.steering = steering,
         this.gasoline = gasoline,
@@ -35,7 +35,7 @@ carsData.push(new Car('c01',
 80, 
 100,
 "NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the race track..",
-["./img/mc02.png", "./img/mc02.png"]));
+["mc01.png", "addphoto_a1c01.png", "addphoto_a2c01.png"]));
 
 carsData.push(new Car('c02', 
 'Koenigsegg',
@@ -46,7 +46,7 @@ carsData.push(new Car('c02',
 99, 
 99,
 "NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the race track..",
-["./img/mc01.png", "./img/mc01.png"]));
+["mc02.png", "addphoto_a1c01.png", "addphoto_a2c01.png"]));
 
 carsData.push(new Car('c03', 
 'Rolls-Royce',
@@ -57,18 +57,39 @@ carsData.push(new Car('c03',
 96, 
 96,
 "NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the race track..",
-["./img/mc03.png", "./img/mc01.png"]));
+["mc03.png", "addphoto_a1c01.png", "addphoto_a2c01.png"]));
+
+carsData.push(new Car('c04', 
+'All New Rush',
+'SUV', 
+6, 
+'Manual', 
+70, 
+72, 
+80,
+"NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the race track..",
+["mc04.png", "addphoto_a1c01.png", "addphoto_a2c01.png"]));
+
+carsData.push(new Car('c05', 
+'CR  - V',
+'SUV', 
+6, 
+'Manual', 
+80, 
+80, 
+80,
+"NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the race track..",
+["mc05.png", "addphoto_a1c01.png", "addphoto_a2c01.png"]));
+
+carsData.push(new Car('c06', 
+'All New Terios',
+'SUV', 
+6, 
+'Manual', 
+90, 
+74, 
+74,
+"NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the race track..",
+["mc05.png", "addphoto_a1c01.png", "addphoto_a2c01.png"]));
 
 
-// [
-//     ['Nissan GT-R', 'sport', 2, 'Manual', 70, 80, 100,
-//     "NISMO has become ....INSERT ... the race track.",
-//     "./img/mc01.png", ["./img/mc01.png", "./img/mc01.png"]],
-
-//      []
-
-
-// ]
-//.map(([carName, typeCar, capacity, steering, gasoline, currentPrice, fullPrice, description, mainImage, additionalPhotos]) => ({carName, typeCar, capacity, steering, gasoline, currentPrice, fullPrice, description, mainImage, additionalPhotos}))
-
-// console.log(carsRawData)
