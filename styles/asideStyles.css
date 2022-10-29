@@ -1,0 +1,47 @@
+.filter-group {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.65rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #94a7cb;
+}
+
+.form-check {
+    padding-left: 0px;
+}
+
+.form-range {
+    width: 80%;
+}
+
+.filter-name {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #3d5278;
+}
+
+.filter-count {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #90a3bf;
+}
+
+.form-check-input {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.filter-item {
+  margin: 1.8rem;
+}

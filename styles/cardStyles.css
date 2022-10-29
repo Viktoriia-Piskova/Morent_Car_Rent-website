@@ -4,8 +4,14 @@
   border: none;
 }
 
+.like-btn:hover * {
+  fill: #ED3F3F;
+  stroke: #ED3F3F;
+}
+
 .active * {
-  fill: red;
+  fill: #ED3F3F;
+  stroke: #ED3F3F;
 }
 
 .card {
@@ -76,7 +82,7 @@
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   color: #90a3bf;
 }
 

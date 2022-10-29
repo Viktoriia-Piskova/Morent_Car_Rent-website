@@ -1,5 +1,7 @@
 /* @import './styles/reset.css'; */
 @import "./styles/cardStyles.css";
+@import "./styles/asideStyles.css";
+@import "./styles/reviews.css";
 
 ul {
   padding: 0px;
@@ -7,6 +9,10 @@ ul {
 }
 .container-fluid {
   background-color: #fff;
+}
+
+.container {
+  margin: auto;
 }
 
 .main {
@@ -59,6 +65,10 @@ h4 {
 
 .view-all a:hover {
     text-decoration: underline;
+}
+
+footer {
+  padding-top: 80px;
 }
 
 footer li {

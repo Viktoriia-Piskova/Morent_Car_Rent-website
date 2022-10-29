@@ -12,7 +12,7 @@ export default class Car {
                 images) {
         this.id = id,
         this.name = carName,
-        this.typer = typeCar,
+        this.type = typeCar,
         this.capacity = capacity,
         this.steering = steering,
         this.gasoline = gasoline,
@@ -20,6 +20,9 @@ export default class Car {
         this.fullPrice = fullPrice,
         this.description = description,
         this.images = images
+    }
+     addToLiked() {
+        this.liked = true;
     }
 }
 
