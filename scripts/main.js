@@ -5,6 +5,7 @@ import {displayFilters} from './carsFilter.js';
 import {displayReviews} from './reviews.js';
 import {reviewsList} from './reviews.js';
 import {addToLikedCars} from './addToLiked.js';
+import {displayDetails} from './carDetails.js';
 
 export const likedCars = [];   //list of all cars that were liked 
 export const recentCars = [];  
@@ -17,6 +18,7 @@ const capacitiesList = ['2 Person', '4 Person', '6 Person', '8 or more'];
 const capacityContainer = document.getElementById('capacity-container');
 const reviewsContainer = document.getElementById('reviews-container')
 const recomendedCarContainer = document.getElementById('recomend-car-container');
+const carDetails = document.getElementById('car-details');
 
 displayFilters(typesList, typesContainer);
 displayFilters(capacitiesList, capacityContainer);
@@ -30,7 +32,7 @@ recomendedCars.forEach((car) => {
 let elementsArray = recomendedCarContainer.querySelectorAll(".card-img-top");
 elementsArray.forEach((elem, index) => {
     elem.addEventListener("click", function() {
-        console.log(carsData[index])
+        carDetails.innerHTML = displayDetails(carsData[index])
     });
 }); 
 

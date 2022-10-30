@@ -32,7 +32,7 @@ export function displayCarCard(car) {
                         <p class="price col"><span class="current-price">$${car.currentPrice}.00/</span>day</p>
                         <p class="price full-price col">$${car.fullPrice}.00</p>
                     </div>
-                    <a href="#" class="btn btn-primary col-5 rent-now-btn">Rent now</a>
+                <a href="#" class="btn btn-primary col-5 rent-now-btn">Rent now</a>
                 </div>
             </div>
          </div>`;

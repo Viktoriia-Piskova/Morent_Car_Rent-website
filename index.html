@@ -83,24 +83,27 @@
             </form>
         </aside>
 
-        <main class="main container col-sm-9">
+        <main class="main container col-md-9 p-4">
 
             <section id="car-details">
                 <div id="car-info" class="row">
-                    <div id="car-photos" class="col-sm-6">
-                        <div class="gallery-main-photo">
-                            <img src="./img/cars/mc01.png" alt="">
+                    <div id="car-photos" class="col-lg-6">
+                        <div class="details-main-photo p-4">
+                            <h1 class="main-header col">Sports car with the best design and acceleration</h1>
+                            <p class="main-description col">Safety and comfort while driving a 
+                                futuristic and elegant sports car</p>
+                            <div class="col"><img src="./img/cars/mc01.png" alt=""></div>
                         </div>
-                        <div class="row">
-                            <div class="col-4"><img src="./img/cars/mc01.png" alt=""></div>
-                            <div class="col-4"><img src="./img/cars/addphoto_a1c01.png" alt=""></div>
-                            <div class="col-4"><img src="./img/cars/addphoto_a2c01.png" alt=""></div>
+                        <div class="row extra-photos">
+                            <div class="col-4 details-extra-photo"><img src="./img/cars/mc01.png" class="img-thumbnail" alt=""></div>
+                            <div class="col-4 details-extra-photo"><img src="./img/cars/addphoto_a1c01.png" class="img-thumbnail" alt=""></div>
+                            <div class="col-4 details-extra-photo"><img src="./img/cars/addphoto_a2c01.png" class="img-thumbnail" alt=""></div>
                         </div>
                     </div>
-                    <div id="car-description" class="col-sm-6">
+                    <div id="car-description" class="col-lg-6">
                         <div class="row justify-content-between">
                             <div class="col-5">
-                                <h2>{car.name}</h2>
+                                <h3>{car.name}</h3>
                             </div>
                             <button class="like-btn col-2">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -112,39 +115,38 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="car-rating">* * * * *{car.rating} <span>440+ Reviewer</span></div>
+                        <div class="car-rating">{car.rating} <span>440+ Reviewer</span></div>
                         <article class="car-description">
                             {car.description} Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
                             excepturi accusamus dignissimos odio quam nobis unde, distinctio repellendus nulla at natus
                             libero quo necessitatibus iste fugit illo eveniet consectetur! Debitis!
                         </article>
                        <div class="row justify-content-between">
-                            <div class="tech-info col no-wrap">
-                                <div class="tech-text">Type Car</div>
-                                <span class="tech-desription">${car.type}L</span>
+                            <div class="tech-info col no-wrap row justify-content-between">
+                                <div class="tech-text col">Type Car</div>
+                                <span class="tech-desription col text-right">${car.type}L</span>
                             </div>
-                            <div class="tech-info col no-wrap">
-                                <div class="tech-text">Steering</div>
-                                <span class="tech-desription">${car.steering}</span>
+                            <div class="tech-info col no-wrap row justify-content-between">
+                                <div class="tech-text col">Steering</div>
+                                <span class="tech-desription col text-right">${car.steering}</span>
                             </div>
                        </div>
 
                        <div class="row justify-content-between">
-                            <div class="tech-info col no-wrap">
-                                <div class="tech-text">Capacity</div>
-                                <span class="tech-desription">${car.capacity}</span>
+                            <div class="tech-info col no-wrap row justify-content-between">
+                                <div class="tech-text col">Capacity</div>
+                                <span class="tech-desription col text-right">${car.capacity}</span>
                             </div>
-                            <div class="tech-info col no-wrap">
-                                <div class="tech-text">Gasoline</div>
-                                <span class="tech-desription">${car.gasoline} people</span>
+                            <div class="tech-info col no-wrap row justify-content-between">
+                                <div class="tech-text col">Gasoline</div>
+                                <span class="tech-desription col text-right">${car.gasoline} people</span>
                             </div>
                             <div class="rent-info row justify-content-between">
                                 <div class="price-display col row column align-content-center">
                                     <p class="price col"><span class="current-price">$${car.currentPrice}.00/</span>day</p>
-                                    <p class="price full-price col">$${car.fullPrice}.00</p>
+                                    <p class="price full-price col text-right">$${car.fullPrice}.00</p>
                                 </div>
                                 <a href="#" class="btn btn-primary col-5 rent-now-btn">Rent now</a>
-        
                             </div>
                        </div>
                     </div>
@@ -160,8 +162,8 @@
 
             <section id="resent">
                 <div class="section-header row justify-content-between">
-                    <h2 class="col-2">Recent Car</h2>
-                    <p class="view-all col-2"><a href="#">View all</a></p>
+                    <h2 class="col-lgs-2 col-6">Recent Car</h2>
+                    <p class="view-all col-lgs-2 col-6"><a href="#">View all</a></p>
                 </div>
                 <div id="recent-car-container" class="row">
                 </div>
@@ -169,8 +171,8 @@
 
             <section id="recomendations">
                 <div class="section-header row justify-content-between">
-                    <h2 class="col-3">Recomendations Car</h2>
-                    <p class="view-all col-2"><a href="#">View all</a></p>
+                    <h2 class="col-lgs-3 col-6">Recomendations Car</h2>
+                    <p class="view-all col-lgs-3 col-6"><a href="#">View all</a></p>
                 </div>
                 <div id="recomend-car-container" class="row justify-content-between">
                 </div>
