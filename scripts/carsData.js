@@ -9,7 +9,9 @@ export default class Car {
                 currentPrice, 
                 fullPrice, 
                 description, 
-                images) {
+                images,
+                isOpened = false,
+                isRecent = false) {
         this.id = id,
         this.name = carName,
         this.type = typeCar,
@@ -19,7 +21,9 @@ export default class Car {
         this.currentPrice = currentPrice,
         this.fullPrice = fullPrice,
         this.description = description,
-        this.images = images
+        this.images = images,
+        this.isOpened = isOpened,
+        this.isRecent = isRecent
     }
      addToLiked() {
         this.liked = true;
@@ -38,7 +42,8 @@ carsData.push(new Car('c01',
 80, 
 100,
 "NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the race track..",
-["mc01.png", "addphoto_a1c01.png", "addphoto_a2c01.png"]));
+["mc01.png", "addphoto_a1c01.png", "addphoto_a2c01.png"],
+true));
 
 carsData.push(new Car('c02', 
 'Koenigsegg',

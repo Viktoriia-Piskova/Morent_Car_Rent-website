@@ -1,7 +1,6 @@
-export function displayCarCard (carsList, container) {
-   container.innerHTML = '';
-    for (let car of carsList) {
-        container.innerHTML += `
+export function displayCarCard(car) {
+    let cardTemplate = '';
+    return cardTemplate = `
         <div id="${car.id}" class="card col-md-3 p-4 m-3" style="width:278px">
             <div class="row justify-content-between">
                 <h4 class="card-title col">${car.name}</h4>
@@ -37,5 +36,4 @@ export function displayCarCard (carsList, container) {
                 </div>
             </div>
          </div>`;
-    }
 }
