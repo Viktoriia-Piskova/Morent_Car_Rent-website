@@ -1,3 +1,14 @@
+
+import { allTypes, allCapacities } from '../data.js';
+
+export function initCars(cars){
+    const recomendedCarContainer = document.getElementById('recomend-car-container');
+    recomendedCarContainer.innerHTML = ''
+    cars.forEach((car) => {
+        let carCard = displayCarCard(car);
+        recomendedCarContainer.innerHTML += carCard;
+})}
+
 export function displayReviews(reviews, container) {
     for (let rev of reviews) {
         container.innerHTML += `
@@ -24,6 +35,8 @@ export function displayReviews(reviews, container) {
 }
 
 export function displayCarCard(car) {
+    const capacityName = allCapacities.find(element => element.id === car.capacityId).name
+    const typeName = allTypes.find(element => element.id === car.typeId).name
     return `
         <div id="${car.id}" class="card col-md-3 p-4 m-3" style="width:278px">
             <div class="row justify-content-between">
@@ -34,7 +47,7 @@ export function displayCarCard(car) {
                     </svg>
                  </button>
             </div>
-            <p class="type-car">${car.typeName}</p>
+            <p class="type-car">${typeName}</p>
             <img class="card-img-top" src="./img/cars/${car.images[0]}" alt="Card image">
             <div class="card-body">
                 <div class="tech-section row">
@@ -48,7 +61,7 @@ export function displayCarCard(car) {
                     </div>
                     <div class="tech-info col no-wrap">
                         <div class="tech-icon"><img src="./img/capacity-people.svg" alt="capacity-people"></div>
-                        <span class="tech-description">${car.capacityName}</span>
+                        <span class="tech-description">${capacityName}</span>
                     </div>
                 </div>
                 <div class="rent-info row justify-content-between">
@@ -86,6 +99,8 @@ filterSection.classList.toggle('hidden')
 }
 
 export function displayDetails(car) {
+    const capacityName = allCapacities.find(element => element.id === car.capacityId).name
+    const typeName = allTypes.find(element => element.id === car.typeId).name
     return `
     <section id="car-details">
     <div id="car-info" class="row">
@@ -124,7 +139,7 @@ export function displayDetails(car) {
            <div class="row justify-content-between">
                 <div class="tech-info col no-wrap row justify-content-between">
                     <div class="tech-text col">Type Car</div>
-                    <span class="tech-desription col text-right">${car.typeName}</span>
+                    <span class="tech-desription col text-right">${typeName}</span>
                 </div>
                 <div class="tech-info col no-wrap row justify-content-between">
                     <div class="tech-text col">Steering</div>
@@ -135,7 +150,7 @@ export function displayDetails(car) {
            <div class="row justify-content-between">
                 <div class="tech-info col no-wrap row justify-content-between">
                     <div class="tech-text col">Capacity</div>
-                    <span class="tech-desription col text-right">${car.capacityName}</span>
+                    <span class="tech-desription col text-right">${capacityName}</span>
                 </div>
                 <div class="tech-info col no-wrap row justify-content-between">
                     <div class="tech-text col">Gasoline</div>

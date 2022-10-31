@@ -1,28 +1,55 @@
 
+import { initCars } from "./displayService.js";
+import { allCars } from "./../data.js";
+
+const currentTypeFilters = []
+const currentCapacityFilters = []
+
+export function changeTypeFilter(event){
+    const existiningIndex = currentTypeFilters.indexOf(event.target.id);
+    if (existiningIndex > -1) {
+        currentTypeFilters.splice(existiningIndex, 1)
+    } else {
+        currentTypeFilters.push(event.target.id);
+    }
+    filterCars()
+}
+
+export function changeCapacityFilter(event){
+    const existiningIndex = currentCapacityFilters.indexOf(event.target.id);
+        if (existiningIndex > -1) {
+            currentCapacityFilters.splice(existiningIndex, 1)
+        } else {
+            currentCapacityFilters.push(event.target.id);
+        }
+        filterCars()
+}
+
+function filterCars(){
+    let filteredCars = []
+
+    if(currentTypeFilters.length === 0){
+        filteredCars = allCars
+    } else{
+        currentTypeFilters.forEach(element => {
+            const found = allCars.filter(f=>f.typeId === parseInt(element))
+            if(found){
+                filteredCars.push(...found);
+            }
+        })
+    }
     
+    let filteredCars2 = []
+    if(currentCapacityFilters.length === 0){
+        filteredCars2 = filteredCars
+    } else{
+    currentCapacityFilters.forEach(element => {
+        const found = filteredCars.filter(f=>f.capacityId === parseInt(element))
+            if(found){
+                filteredCars2.push(...found);
+            }
+        })
+    }
 
-
-
-
-// export function displayFilters (filters, container) {
-//         for (let filter of filters) {
-//         container.innerHTML += `
-//         <div class="form-check filter-item">
-//             <input
-//                 class="form-check-input"
-//                 type="checkbox"
-//                 id="${filter.toLowerCase().replace(/\s/g,'')}"
-//                 value="${filter.toLowerCase().replace(/\s/g,'')}">
-//             <label
-//                 for="${filter.toLowerCase().replace(/\s/g,'')}"
-//                 class="form-check-label filter-name">${filter}
-//                 <span class="filter-count">(10)</span>
-//             </label>
-//         </div>
-//         `}
-//     }
-
-// export function showFilters() {
-//     const filterSection = document.getElementById('filters');
-//     filterSection.classList.toggle('hidden')
-// }
+    initCars([...new Set(filteredCars2)])
+}
