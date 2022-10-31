@@ -25,9 +25,6 @@ export default class Car {
         this.isOpened = isOpened,
         this.isRecent = isRecent
     }
-     addToLiked() {
-        this.liked = true;
-    }
 }
 
 

@@ -34,9 +34,7 @@ export function displayDetails(car) {
             </div>
             <div class="car-rating">{car.rating} <span>440+ Reviewer</span></div>
             <article class="car-description">
-                ${car.description} Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-                excepturi accusamus dignissimos odio quam nobis unde, distinctio repellendus nulla at natus
-                libero quo necessitatibus iste fugit illo eveniet consectetur! Debitis!
+                ${car.description}
             </article>
            <div class="row justify-content-between">
                 <div class="tech-info col no-wrap row justify-content-between">

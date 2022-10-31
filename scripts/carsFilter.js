@@ -4,8 +4,7 @@ export function displayFilters (filters, container) {
         <div class="form-check filter-item">
             <input 
                 class="form-check-input" 
-                type="checkbox" id="${filter.toLowerCase()}" 
-                value="${filter.toLowerCase()}">
+                type="checkbox" id="${filter.toLowerCase()}">
             <label 
                 for="${filter.toLowerCase()}" 
                 class="form-check-label filter-name">${filter} 

@@ -9,7 +9,6 @@ export function addToLikedCars(carId){
    } else {
     likedCars.push(likedCar);
    }
-   console.log(likedCars);
    document.getElementById('liked-count').innerHTML = likedCars.length
 }
 
