@@ -27,9 +27,10 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./img/Logo.svg" alt="Logo"></a>
                 <form class="d-flex">
-                    <div class="input-group">
-                        <input class="form-control me-2" type="text" placeholder="Search">
-                        <button class="btn btn-light" type="submit"><img src="./img/search-zoom.svg" alt=""></button>
+                    <div class="input-group search-group">
+                        <button class="btn btn-light input-group-prepend" type="submit"><img class="search-icon" src="./img/search-zoom.svg" alt=""></button>
+                        <input class="form-control me-2 search-input" type="text" placeholder="Search">
+                        <button id="filter-button" class="btn btn-light input-group-append" type="button"><img class="search-icon" src="./img/filter-search.svg" alt=""></button>
                     </div>
                 </form>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -67,7 +68,7 @@
     </header>
 
     <div class="container row">
-        <aside class="col-sm-3">
+        <aside class="col-lg-3 hidden" id="filters">
             <form action="#">
                 <fieldset id="typeFilter">
                     <legend class="filter-group">Type</legend>

@@ -5,13 +5,13 @@
 }
 
 .like-btn:hover * {
-  fill: #ED3F3F;
-  stroke: #ED3F3F;
+  fill: #ed3f3f;
+  stroke: #ed3f3f;
 }
 
 .active * {
-  fill: #ED3F3F;
-  stroke: #ED3F3F;
+  fill: #ed3f3f;
+  stroke: #ed3f3f;
 }
 
 .card {
@@ -19,9 +19,9 @@
   padding: 24px;
 }
 
-.card-body{
-    padding: 0px;
-    margin: 0px auto;
+.card-body {
+  padding: 0px;
+  margin: 0px auto;
 }
 .card-img-top {
   padding: 50px 0px;
@@ -69,16 +69,16 @@
 }
 
 .tech-section {
-    padding: 0px;
-    margin: 20px 0px;
+  padding: 0px;
+  margin: 20px 0px;
 }
 
 .tech-info {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-.tech-desription {
+.tech-description {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 500;
@@ -87,7 +87,7 @@
 }
 
 .tech-icon {
-    display: inline-block;
-    height: 14px;
-    width: 14px;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
 }

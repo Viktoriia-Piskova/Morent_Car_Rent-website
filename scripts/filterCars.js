@@ -1,25 +1,21 @@
-export default class Filter {
-    constructor(types,
-        capacities,
-        maxPrice) {
-        this.types = types,
-        this.capacities = capacities,
-        this.maxPrice = maxPrice
-    }
-}
+// export default class Filter {
+//     constructor(types,
+//         capacities,
+//         maxPrice) {
+//         this.types = types,
+//         this.capacities = capacities,
+//         this.maxPrice = maxPrice
+//     }
+// }
 
-arrsf = [sp: false,
-suv: true.valueOf.apply.apply.apply
-pri: 30
-. . . . 12]
+// const allFilters = [];
+// const typeFilterInputs = document.getElementById('typeFilter');
+// const typeValues = typeFilterInputs.querySelectorAll('input')
 
-arrsf = 
-    {
-       chosenTypes: [1, 2 ]sp: false,
-        []
+// typeValues.forEach(input => {
+//     if (input.checked === true) {
+//         allFilters.push(input.value)
+//     }
+// }) 
 
-    suv: true.valueOf.apply.apply.apply
-    pri: 30}
-    
-    
-    
+// new Filter () 

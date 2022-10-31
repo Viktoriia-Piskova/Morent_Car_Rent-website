@@ -1,3 +1,13 @@
+.search-icon {
+  width: 30px;
+  height: auto;
+}
+
+.btn-light {
+  background-color: #fff;
+  border: none;
+}
+
 .filter-group {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
@@ -9,6 +19,14 @@
   color: #94a7cb;
 }
 
+.search-input {
+  border: none;
+}
+.search-group {
+  border: 1px grey solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
 .form-check {
     padding-left: 0px;
 }
@@ -44,4 +62,8 @@
 
 .filter-item {
   margin: 1.8rem;
+}
+
+.hidden {
+  display: none;
 }

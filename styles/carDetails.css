@@ -22,18 +22,22 @@
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 200%;
   letter-spacing: -0.02em;
 
   color: #3d5278;
 }
 
+.current-price {
+  font-size: 28px;
+}
+
 .tech-text {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.02em;
   color: #90a3bf;
