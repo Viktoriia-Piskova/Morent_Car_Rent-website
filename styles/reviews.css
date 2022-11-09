@@ -1,0 +1,56 @@
+#car-reviews {
+  padding: 1.8rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.reviews-header {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  color: #1a202c;
+}
+
+.rev-name {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #1a202c;
+}
+
+.rev-date {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #90a3bf;
+  text-align: end;
+}
+
+.rev-job {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #90a3bf;
+}
+.rev-text {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 200%;
+  letter-spacing: -0.02em;
+  color: #3d5278;
+}
+
+.rev-stars {
+  text-align: end;
+}
